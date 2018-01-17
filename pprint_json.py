@@ -4,8 +4,7 @@ filepath = 'json_file.txt'
 
 def load_data(filepath):
     with open(filepath, 'r') as f:
-        data = json.load(f)
-        return data
+        return json.load(f)
 
 def pretty_print_json(data):
     return json.dumps(data, sort_keys=True, indent=4, ensure_ascii = False)
