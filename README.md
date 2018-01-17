@@ -1,20 +1,28 @@
-# Prettify JSON
+# JSON в удобном для чтения виде
 
-[TODO. There will be project description]
+Данный скрипт на вход принимает путь до файла с произвольными данными в формате JSON и выводит его содержимое в консоль в удобном для чтения виде: добавляет переносы строк, отступы слева и пробелы.
 
-# Quickstart
+# Как запустить
 
-[TODO]
+Скрипт требует для своей работы установленного интерпретатора Python версии 3.5.
 
-Example of script launch on Linux, Python 3.5:
+В командной строке вызовите pprint_json.py и через пробел укажите путь к файлу.
 
 ```bash
 
 $ python pprint_json.py <path to file>
-# TODO add output example
-
+# [
+    {
+        "Cells": {
+            "Address": "улица Академика Павлова, дом 10",
+            "AdmArea": "Западный административный округ",
+            "ClarificationOfWorkingHours": null,
+            "District": "район Кунцево",
+            "IsNetObject": "да",
+            "Name": "Ароматный Мир",
+...
 ```
 
-# Project Goals
+# Цели проекта
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Код создан в учебных целях. В рамках учебного курса по веб-разработке ― [DEVMAN.org](https://devman.org)
