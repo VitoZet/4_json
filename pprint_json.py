@@ -1,13 +1,12 @@
 import json
 
-filepath = 'json_file.txt'
-
-def load_data(filepath):
-    with open(filepath, 'r') as f:
-        return json.load(f)
+def load_data():
+    filepath = input('Укажите путь к файлу:')
+    with open(filepath, 'r') as json_file:
+        return json.load(json_file)
 
 def pretty_print_json(data):
-    return json.dumps(data, sort_keys=True, indent=4, ensure_ascii = False)
+    return print(json.dumps(data, sort_keys=True, indent=4, ensure_ascii = False))
 
 if __name__ == '__main__':
-    print(pretty_print_json(load_data(filepath)))
+    pretty_print_json(load_data())
